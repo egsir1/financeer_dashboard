@@ -1,6 +1,6 @@
 import DashboardBox from "@/components/DAshboardBox";
 import { useGetKpisQuery } from "@/state/api";
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useTheme } from "@mui/material";
 import {
   AreaChart,
@@ -18,11 +18,9 @@ import {
 } from "recharts";
 import BoxHeader from "@/components/BoxHeader";
 
-type Props = {};
-
-const Row1 = (props: Props) => {
+const Row1 = () => {
   const { data } = useGetKpisQuery();
-  console.log("🚀 ~ file: Row1.tsx:9 ~ Row1 ~ data:", data);
+  // console.log("🚀 ~ file: Row1.tsx:9 ~ Row1 ~ data:", data);
   const { palette } = useTheme();
 
   const revenueExpenses = useMemo(() => {
