@@ -14,11 +14,9 @@ const daySchema = new Schema(
     },
 
     expenses: {
-      revenue: {
-        type: mongoose.Types.Currency,
-        currency: "USD",
-        get: (v) => v / 100,
-      },
+      type: mongoose.Types.Currency,
+      currency: "USD",
+      get: (v) => v / 100,
     },
   },
   { toJSON: { getters: true } }
@@ -34,27 +32,21 @@ const monthSchema = new Schema(
     },
 
     expenses: {
-      revenue: {
-        type: mongoose.Types.Currency,
-        currency: "USD",
-        get: (v) => v / 100,
-      },
+      type: mongoose.Types.Currency,
+      currency: "USD",
+      get: (v) => v / 100,
     },
 
     operationalExpenses: {
-      revenue: {
-        type: mongoose.Types.Currency,
-        currency: "USD",
-        get: (v) => v / 100,
-      },
+      type: mongoose.Types.Currency,
+      currency: "USD",
+      get: (v) => v / 100,
     },
 
-    nonOperationalExpepnses: {
-      revenue: {
-        type: mongoose.Types.Currency,
-        currency: "USD",
-        get: (v) => v / 100,
-      },
+    nonOperationalExpenses: {
+      type: mongoose.Types.Currency,
+      currency: "USD",
+      get: (v) => v / 100,
     },
   },
   { toJSON: { getters: true } }
