@@ -93,6 +93,7 @@ const Predictions = () => {
           </YAxis>
           <Tooltip />
           <Legend verticalAlign="top" />
+
           <Line
             type="monotone"
             dataKey="Actual Revenue"
